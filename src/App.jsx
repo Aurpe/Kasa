@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./Components/home/home/homePage";
 import FicheLogement from './Components/Fiches/FicheLogement';
-import Navbar from './Components/header/Navbar/Navbar';
-import Navbar from './Components/Accueil/menu/Accueil';
-import Navbar from './Components/Accueil/apropos/apropos';
+import Header from './Components/header/Header';
+import Accueil from './Components/Accueil/menu/Accueil';
+import Apropos from './Components/Accueil/apropos/apropos';
+import Footer from './Components/Footer/footer';
 
 
 import './App.css';
@@ -11,7 +12,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Navbar /> 
+      <Header/> 
       <Routes>
         <Route path="/" element={<HomePage />} /> 
         <Route path="/fiche-logement/" element={<FicheLogement />} />
