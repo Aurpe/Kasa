@@ -1,24 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
     return (
-        <div>
+        <header>
             <h1>KASA</h1>
-            <Link to= "/"> Accueil </Link>
-            <Link to= "/"> à propos </Link>
+            <nav>
+            <Link to= "/">Accueil</Link>
+            <Link to= "/">à propos</Link>  
+            </nav>
 
-        </div>
+        </header>
     )
 }
 
 
-
-/*export default function Header() {
-    return(
-     <nav>
-        <Link to= "/"> Accueil </Link>
-        <Link to= "/"> à propos </Link>
-
-     </nav>   
-    )
-}*/
