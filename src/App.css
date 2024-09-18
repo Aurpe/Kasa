@@ -1,4 +1,28 @@
-#root {
+
+.banner-homepage{
+  height:223px;
+  border-radius:25px;
+  min-width:1440px;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav{
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: bold;
+  gap: 30px;
+  display: flex;
+  color: black;
+}
+/*#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +63,4 @@
 
 .read-the-docs {
   color: #888;
-}
+}*/

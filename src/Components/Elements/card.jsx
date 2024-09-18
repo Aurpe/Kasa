@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function Accueil() {
+
+export default function Card() {
   return (
     <div>
-      <h1>Accueil</h1>
+      <h1>Nos logements</h1>
     </div>
   )
 }

@@ -1,9 +1,11 @@
 import React from 'react'
 
 
+
 export default function FicheLogement() {
   return (
     <div>
+      <Header/>
       <h1>Nos logements</h1>
     </div>
   )

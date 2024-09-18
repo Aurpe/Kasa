@@ -1,10 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./Components/home/home/homePage";
 import FicheLogement from './Components/Fiches/FicheLogement';
-import Header from './Components/header/Header';
 import Accueil from './Components/Accueil/menu/Accueil';
 import Apropos from './Components/Accueil/apropos/apropos';
 import Footer from './Components/Footer/footer';
+import Header from './Components/header/Header';
+import Banner from './Components/Elements/banner';
 
 
 import './App.css';
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Header/> 
+      <Banner/>
       <Routes>
         <Route path="/" element={<HomePage />} /> 
         <Route path="/fiche-logement/" element={<FicheLogement />} />
@@ -20,6 +22,7 @@ function App() {
         <Route path="/Accueil/" element = {<Apropos />} />
 
       </Routes>
+      <Footer/>
     </div>
   );
 }
