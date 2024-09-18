@@ -1,22 +1,26 @@
 import React from 'react'
+//import FicheLogement from '../Fiches/FicheLogement';
+//import Data from '../src/assets/data/logements.json';
 
 
-
-export default function FicheLogement() {
+export default function Logement() {
   return (
     <div>
       <Header/>
-      <h1>Nos logements</h1>
+      <div className="Logement">
+        <Slide pictures= {Data.pictures} />
+
+      </div>
+
     </div>
   )
 }
 
-
-/*import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const FicheLogement = () => {
-  const { id } = useParams(); // Récupérer l'ID du logement depuis l'URL
+  const { id } = useParams(); 
   const [logement, setLogement] = useState(null);
 
   useEffect(() => {
@@ -42,4 +46,4 @@ const FicheLogement = () => {
   );
 };
 
-export default FicheLogement;*/
+

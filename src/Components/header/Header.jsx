@@ -8,7 +8,7 @@ export default function Header() {
             <h1>
                 <img src={logo} alt= "logo Kasa" className="logoKasa" />
             </h1>
-            <nav>
+            <nav className='Navbar'>
             <Link to= "/">Accueil</Link>
             <Link to= "/">à propos</Link>  
             </nav>

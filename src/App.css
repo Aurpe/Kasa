@@ -1,8 +1,15 @@
+#root {
+  min-width: 1440px;
+  margin:auto;
+}
+
 
 .banner-homepage{
   height:223px;
   border-radius:25px;
   min-width:1440px;
+  position:absolute;
+  bottom: 40%;
 }
 
 header{
@@ -12,9 +19,15 @@ header{
   align-content: stretch;
   justify-content: space-around;
   align-items: center;
+  width:100%;
+  margin-bottom:20%
+}
+.h1{
+  position: relative;
+  right: 15%;
 }
 
-.nav{
+.Navbar{
   font-family: 'Montserrat';
   font-size: 24px;
   font-weight: bold;
@@ -22,6 +35,15 @@ header{
   display: flex;
   color: black;
 }
+
+.Navbar a{
+  font-weight: bold;
+  color: black;
+  text-decoration: inherit;
+}
+
+
+
 /*#root {
   max-width: 1280px;
   margin: 0 auto;
