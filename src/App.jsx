@@ -7,7 +7,7 @@ import Header from './Components/header/Header';
 import Banner from './Components/Elements/banner';
 
 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
@@ -15,12 +15,11 @@ function App() {
       <Header/> 
       <Banner/>
       <Routes>
-
         <Route path="/" element={<HomePage />} /> 
         <Route path="/Accueil/" element = {<HomePage />} />
         <Route path="/Accueil/" element = {<Apropos />} />
         <Route path="/LogementCard/" element={<FicheLogement />} />
-
+    
       </Routes>
       <Footer/>
     </div>

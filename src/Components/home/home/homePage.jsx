@@ -13,6 +13,7 @@ function LogementCard({ id, cover, title }) {
 }
 
 export default function HomePage() {
+  
   return (
     <div className="homepage">
       <h2>Nos Logements</h2>

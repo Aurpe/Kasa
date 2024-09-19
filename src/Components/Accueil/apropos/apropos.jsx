@@ -4,7 +4,7 @@ import CollapseMenu from '../../Elements/collapse'
 export default function apropos() {
   return (
     <div>
-     {CollapseMenu} 
+   
     </div>
   )
 }
