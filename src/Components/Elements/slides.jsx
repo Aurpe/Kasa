@@ -3,25 +3,8 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import data from '../assets/data/logements.json';
 import FicheLogement from '../Fiches/FicheLogement';
 
-function slidesGallery() {
-  return (
-    <div className="Slider">
-      <h2>Logements</h2> 
-      <div className="logementSlider">
-        {data.map((logement) => (
-          <FicheLogement
-            key={logement.id}
-            id={logement.id}
-            pictures={logement.pictures}
-            title={logement.title}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
 
-function FicheLogement({ id, pictures, title }) {
+function Slider({pictures}) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0); 
 
   
@@ -59,4 +42,15 @@ function FicheLogement({ id, pictures, title }) {
   );
 }
 
-export default slidesGallery;
+export default Slider;
+
+
+
+
+
+
+
+
+
+
+

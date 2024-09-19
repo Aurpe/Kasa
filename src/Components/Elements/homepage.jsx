@@ -12,6 +12,8 @@ function LogementCard({ id, cover, title }) {
   );
 }
 
+// au clic sur le lien, il faut que ca navige vers l'url "/location/{id}"
+
 export default function HomePage() {
   
   return (

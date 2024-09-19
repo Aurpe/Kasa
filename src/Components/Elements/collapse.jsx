@@ -1,6 +1,8 @@
+
+
 import React, { useState } from 'react';
 
-export default function CollapseMenu() {
+export default function CollapseMenu({title, content}) {
   // Utiliser l'état pour suivre si le menu est ouvert ou fermé
   const [isOpen, setIsOpen] = useState(false);
 
