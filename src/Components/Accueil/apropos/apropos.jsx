@@ -1,5 +1,5 @@
 import React from 'react'
-import CollapseMenu from '../../Elements/collapse'
+import CollapseMenu from './Components/Elements/collapse'
 
 export default function apropos() {
   return (

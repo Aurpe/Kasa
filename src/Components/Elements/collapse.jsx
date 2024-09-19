@@ -11,12 +11,10 @@ export default function CollapseMenu() {
 
   return (
     <div className="collapse-menu">
-      {/* Bouton ou lien pour ouvrir/fermer le menu */}
+      
       <button onClick={toggleMenu} className="menu-toggle">
         {isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
       </button>
-
-      {/* Contenu du menu, affiché uniquement si isOpen est vrai */}
       <div className={`collapse-content ${isOpen ? 'open' : 'closed'}`}>
         <ul>
           <li><a href="#section1">Section 1</a></li>

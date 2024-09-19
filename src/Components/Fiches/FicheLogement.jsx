@@ -1,6 +1,6 @@
 import React from 'react'
-import slides from './Components/Elements/slides';
-//import Data from '../src/assets/data/logements.json';
+import Slides from './Components/Elements/slides';
+
 
  
 export default function FicheLogement() {
