@@ -1,10 +1,9 @@
 import React, { useState } from 'react'; 
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; 
-import data from '../assets/data/logements.json';
-import FicheLogement from '../Fiches/FicheLogement';
 
 
-function Slider({pictures}) {
+
+function Slider({pictures,title}) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0); 
 
   

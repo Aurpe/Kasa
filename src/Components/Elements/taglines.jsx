@@ -1,11 +1,18 @@
 import React from 'react';
-import Data from '../src/assets/data/logements.json'; 
 
-
-export default function Tagline () {
-    return
-     
+export default function Tagline({ tags }) {
+  return (
+    <div className="tags-container">
+      {tags.map((tag, index) => (
+        <span key={index} className="tag">
+          {tag}
+        </span>
+      ))}
+    </div>
+  );
 }
+
+
  
       
         

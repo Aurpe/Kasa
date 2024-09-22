@@ -1,13 +1,15 @@
 
 import React from 'react';
-import CollapseMenu from "./../../Elements/collapse"
-import Banner from "./../../Elements/banner"
+import CollapseMenu from "./collapse"
+import Banner from "./banner"
 
-export default function apropos() {
+export default function Apropos() {
   return (
     <div>
-      <Banner img="url de l'autre image" title=" " />
+      <Banner img="./src/Images/Banner_avantpropos.png" title="Bannière avant propos " />
       <CollapseMenu />
     </div>
   )
 }
+
+

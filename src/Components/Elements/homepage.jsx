@@ -1,26 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import data from '../../../assets/data/logements.json';
+import Data from '../../assets/data/logements.json';
 
 
 function LogementCard({ id, cover, title }) {
   return (
-    <Link to={`/fiche-logement/${id}`} className="logement-card">
+    <Link to={`/location/${id}`} className="logement-card">
       <img src={cover} alt={title} className="logement-image" />
       <div className="logement-title">{title}</div>
     </Link>
   );
 }
 
-// au clic sur le lien, il faut que ca navige vers l'url "/location/{id}"
-
 export default function HomePage() {
-  
   return (
     <div className="homepage">
-      <h2>Nos Logements</h2>
+      <h1>Nos Logements</h1>
       <div className="logements-grid">
-        {data.map((logement) => (
+        {Data.map((logement) => (
           <LogementCard
             key={logement.id}
             id={logement.id}
@@ -32,3 +29,7 @@ export default function HomePage() {
     </div>
   );
 }
+
+
+
+

@@ -1,12 +1,13 @@
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./Components/home/home/homePage";
+import HomePage from "./Components/Elements/homepage";
 import FicheLogement from './Components/Fiches/FicheLogement';
-import Apropos from './Components/Accueil/apropos/apropos';
+import Apropos from './Components/Elements/apropos';
 import Footer from './Components/Footer/footer';
 import Header from './Components/header/Header';
+import PageError from './Components/Elements/PageError';
 
 
-import './App.scss';
+import './Fichiers scss/App.scss';
 
 function App() {
   return (
@@ -15,9 +16,9 @@ function App() {
       
       <Routes>
         <Route path="/" element={<HomePage />} /> 
-        <Route path="/Accueil/" element = {<Apropos />} />
+        <Route path="/" element = {<Apropos />} />
         <Route path="/location/:id" element={<FicheLogement />} />
-        <Route path="*" element={<Error />} />
+        <Route path="*" element={<PageError />} />
       </Routes>
       <Footer/>
     </div>
