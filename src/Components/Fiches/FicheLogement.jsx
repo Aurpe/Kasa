@@ -5,6 +5,7 @@ import Slides from '../Elements/slides';
 import Tagline from '../Elements/taglines';  
 import data from '../../assets/data/logements.json';
 //import Classement from '../Elements/rating';
+import Host from '../Elements/host';
 
 export default function FicheLogement() {
   const { id } = useParams();
@@ -27,10 +28,12 @@ export default function FicheLogement() {
     <div className="Logement">
       
       <Slides pictures={logement.pictures} />
-      <h1>{logement.title}</h1>
-      <Tagline tags={logement.tags} />
-      <p>Hôte: {logement.host.name.picture}</p>
+      <h1 className='logement-title'>{logement.title}</h1>
       <p>Localisation: {logement.location}</p>
+      <Tagline tags={logement.tags} />
+      <Host host={logement.host} />
+      <p>Hôte: {logement.host.name}</p>
+      <p>Hôte: {logement.host.picture}</p>
       <p>Description: {logement.description}</p>
     </div>
   );

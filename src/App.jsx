@@ -8,7 +8,7 @@ import PageError from './Components/Elements/PageError';
 import Banner from './Components/Elements/banner';
 
 
-import './Fichiers scss/App.scss';
+
 
 function App() {
   return (
