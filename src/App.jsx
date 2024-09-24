@@ -5,6 +5,7 @@ import Apropos from './Components/Elements/apropos';
 import Footer from './Components/Footer/footer';
 import Header from './Components/header/Header';
 import PageError from './Components/Elements/PageError';
+import Banner from './Components/Elements/banner';
 
 
 import './Fichiers scss/App.scss';
@@ -13,10 +14,10 @@ function App() {
   return (
     <div className="App">
       <Header/> 
-      
       <Routes>
+        
         <Route path="/" element={<HomePage />} /> 
-        <Route path="/" element = {<Apropos />} />
+        <Route path="/apropos" element = {<Apropos />} />
         <Route path="/location/:id" element={<FicheLogement />} />
         <Route path="*" element={<PageError />} />
       </Routes>

@@ -1,0 +1,31 @@
+
+.homepage {
+    background-color: #f6f6f6;
+    width: 1240px;
+    height: auto;
+    border-radius: 25px;
+    margin:auto;
+
+    .logements-grid {
+    justify-items: center;
+    justify-content: space-around;
+    grid-column-gap: 60px;
+    grid-row-gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 56px 0;
+    }
+    .logement-card {
+      img {
+        height: 340px;
+        width: 340px;
+        border-radius: 10px;
+      }
+    }
+    .logement-title {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    width: 70%;
+    }
+  }

@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Data from '../../assets/data/logements.json';
+import '../../Fichiers scss/homepage.scss'
+import '../../Fichiers scss/normalize.scss'
+
 
 
 function LogementCard({ id, cover, title }) {
@@ -15,7 +18,7 @@ function LogementCard({ id, cover, title }) {
 export default function HomePage() {
   return (
     <div className="homepage">
-      <h1>Nos Logements</h1>
+      
       <div className="logements-grid">
         {Data.map((logement) => (
           <LogementCard

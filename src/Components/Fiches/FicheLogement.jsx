@@ -25,14 +25,13 @@ export default function FicheLogement() {
 
   return (
     <div className="Logement">
-      <Banner/>
-      <h1>{logement.title}</h1>
+      
       <Slides pictures={logement.pictures} />
+      <h1>{logement.title}</h1>
       <Tagline tags={logement.tags} />
-     
-      <p>Description: {logement.description}</p>
-      <p>Hôte: {logement.host.name}</p>
+      <p>Hôte: {logement.host.name.picture}</p>
       <p>Localisation: {logement.location}</p>
+      <p>Description: {logement.description}</p>
     </div>
   );
 }

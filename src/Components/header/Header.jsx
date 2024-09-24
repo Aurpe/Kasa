@@ -10,7 +10,7 @@ export default function Header() {
             </h1>
             <nav className='Navbar'>
             <Link to= "/">Accueil</Link>
-            <Link to= "/Elements/apropos">à propos</Link>  
+            <Link to= "/apropos">à propos</Link>  
             </nav>
             
 

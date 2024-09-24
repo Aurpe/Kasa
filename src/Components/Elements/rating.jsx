@@ -4,7 +4,7 @@ export default function Classement({ rating }) {
   return (
     <div className="rating-container">
       {rating.map((rate, index) => (
-        <span key={index} className="container">
+        <span key={index} className="rate">
           {rate}
         </span>
       ))}

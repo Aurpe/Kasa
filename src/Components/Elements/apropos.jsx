@@ -6,7 +6,7 @@ import Banner from "./banner"
 export default function Apropos() {
   return (
     <div>
-      <Banner img="./src/Images/Banner_avantpropos.png" title="Bannière avant propos " />
+      <Banner img="source" title="Bannière avant propos " />
       <CollapseMenu />
     </div>
   )
