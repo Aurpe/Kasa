@@ -6,6 +6,8 @@ import Tagline from '../Elements/taglines';
 import data from '../../assets/data/logements.json';
 //import Classement from '../Elements/rating';
 import Host from '../Elements/host';
+import Collapse from '../Elements/collapse';
+
 
 export default function FicheLogement() {
   const { id } = useParams();
@@ -28,13 +30,25 @@ export default function FicheLogement() {
     <div className="Logement">
       
       <Slides pictures={logement.pictures} />
-      <h1 className='logement-title'>{logement.title}</h1>
-      <p>Localisation: {logement.location}</p>
+      <h1 className='logement-description'>{logement.title}</h1>
+      <p className='logement-location'>Localisation: {logement.location}</p>
       <Tagline tags={logement.tags} />
       <Host host={logement.host} />
+      <div key={logement.id} className="logement-item">
+      <Collapse 
+        title="Description" 
+        content={logement.description}
+      />
+      <Collapse 
+        title="Équipements" 
+        content={logement.equipments}
+      />
+      
+      <p>Rating:{logement.rating}</p>
       <p>Hôte: {logement.host.name}</p>
       <p>Hôte: {logement.host.picture}</p>
-      <p>Description: {logement.description}</p>
+      
+    </div>
     </div>
   );
 }
@@ -46,20 +60,3 @@ export default function FicheLogement() {
 
 
  
-/*export default function FicheLogement() {
-  return (
-    <div>
-      <Header/>
-      <div className="Logement">
-      <Banner img="url de l'image" title="Chez vous machin machin"/>
-      <h1>Notre Galerie de Logements</h1>
-      <Slides logements={pictures} />
-
-
-      </div>
-
-    </div>
-  )
-}*/
-
-//se servir de useParams pour récupérer l'id du logement qui est dans l'url

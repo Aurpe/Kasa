@@ -1,0 +1,27 @@
+.Navbar{
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight:500;
+    gap: 30px;
+    display: flex;
+    color: black;
+    font-size:24px;
+}
+
+  header{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1240px;
+    padding-top: 40px;
+    width: 100%;
+  
+}
+
+.Navbar a{
+    font-weight: bold;
+    color: black;
+    text-decoration: inherit;
+  }

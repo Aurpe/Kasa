@@ -1,0 +1,26 @@
+.slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+    
+.slider img{
+    width:1240px;
+    height:415px;
+    object-fit: cover;
+}
+
+.Chevron{
+    width: 96px;
+    height: 116px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+    
+
+

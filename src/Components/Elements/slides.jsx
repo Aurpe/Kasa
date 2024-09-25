@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 function Slider({ pictures, title }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -22,12 +22,12 @@ function Slider({ pictures, title }) {
       <h3>{title}</h3>
       {pictures && pictures.length > 0 ? (
         <div className="slider">
-          <span className="arrow-container left">
-            <FaArrowLeft className="arrow" onClick={handlePrevClick} />
+          <span className="Chevron">
+            <FaChevronLeft className="Chevron" onClick={handlePrevClick} />
           </span>
           <img src={pictures[currentImageIndex]} alt={`${title}`} />
-          <span className="arrow-container right">
-            <FaArrowRight className="arrow" onClick={handleNextClick} />
+          <span className="Chevron">
+            <FaChevronRight className="Chevron" onClick={handleNextClick} />
           </span>
         </div>
       ) : (

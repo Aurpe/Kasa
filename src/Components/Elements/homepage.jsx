@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Data from '../../assets/data/logements.json';
+import Banner from '../Elements/banner';
 
 
 
@@ -18,7 +19,7 @@ function LogementCard({ id, cover, title }) {
 export default function HomePage() {
   return (
     <div className="homepage">
-      
+      <Banner img="./src/assets/Images/Banner_homepage.png" title= "Chez vous et partout ailleurs" />
       <div className="logements-grid">
         {Data.map((logement) => (
           <LogementCard

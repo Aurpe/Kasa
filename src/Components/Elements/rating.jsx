@@ -1,4 +1,4 @@
-/*import React from 'react';
+import React from 'react';
 
 export default function Classement({ rating }) {
   return (
@@ -10,4 +10,4 @@ export default function Classement({ rating }) {
       ))}
     </div>
   );
-}*/
+}
