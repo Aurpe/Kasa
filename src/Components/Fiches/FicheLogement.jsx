@@ -4,7 +4,7 @@ import Banner from "../Elements/banner";
 import Slides from '../Elements/slides';
 import Tagline from '../Elements/taglines';  
 import data from '../../assets/data/logements.json';
-//import Classement from '../Elements/rating';
+import Classement from '../Elements/rating';
 import Host from '../Elements/host';
 import Collapse from '../Elements/collapse';
 
