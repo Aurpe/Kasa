@@ -22,12 +22,12 @@ function Slider({ pictures, title }) {
       <h3>{title}</h3>
       {pictures && pictures.length > 0 ? (
         <div className="slider">
-          <span className="Chevron">
-            <FaChevronLeft className="Chevron" onClick={handlePrevClick} />
+          <span className="ChevronLeft">
+            <FaChevronLeft className="ChevronLeft" onClick={handlePrevClick} />
           </span>
           <img src={pictures[currentImageIndex]} alt={`${title}`} />
-          <span className="Chevron">
-            <FaChevronRight className="Chevron" onClick={handleNextClick} />
+          <span className="ChevronRight">
+            <FaChevronRight className="ChevronRight" onClick={handleNextClick} />
           </span>
         </div>
       ) : (

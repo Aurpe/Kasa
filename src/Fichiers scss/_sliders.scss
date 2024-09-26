@@ -10,16 +10,29 @@
     width:1240px;
     height:415px;
     object-fit: cover;
+    border-radius:25px;
 }
 
-.Chevron{
-    width: 96px;
-    height: 116px;
+.ChevronLeft,
+.ChevronRight {
+    width: 46px;
+    height: 79px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
+    color:white;
+}
+
+.ChevronRight{
+    position: absolute;
+    right: 20%;
+}
+
+.ChevronLeft{
+    position: absolute;
+    left: 20%;
 }
     
 

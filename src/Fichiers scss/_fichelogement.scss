@@ -1,3 +1,23 @@
+
+.Logement{
+    margin: 0 auto;
+    max-width: 1240px;
+    width: 100%;
+}
+.flatInformation{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px auto;
+   
+}
+
+.FlatLocation{
+display:flex;
+flex-direction: column;
+}
+
 .logement-description{
     font-weight:500;
     font-size:36px;
@@ -5,5 +25,17 @@
 }
 .logement-location{
       font-size:26px;
-      font-weight:500;  
+      font-weight:500;
+      margin-top: -3%; 
+}
+
+.flatTagStars{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logement.card{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
