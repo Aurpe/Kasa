@@ -18,6 +18,7 @@ export default function Apropos() {
 
       
       <div class="collapse-apropos">
+      
         {collapses.map((collapse, index) => (
           <CollapseMenu
             key={index}
@@ -25,6 +26,7 @@ export default function Apropos() {
             content={collapse.content}
             openButtonText={collapse.title} 
             closeButtonText={collapse.title}
+            buttonClassName="custom-button-class"
           />
         ))}
       </div>
