@@ -7,10 +7,12 @@
 }
     
 .slider img{
-    width:1240px;
-    height:415px;
-    object-fit: cover;
     border-radius:25px;
+    width:100%;
+   max-width: 1240px;
+height: auto;
+  max-height: 415px;
+  object-fit: cover;
 }
 
 /*.ChevronLeft,
@@ -48,6 +50,13 @@
 .ChevronLeft{
     left: 30%;
    
+}
+
+.image-counter{
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-size: 18px;
 }
     
 
