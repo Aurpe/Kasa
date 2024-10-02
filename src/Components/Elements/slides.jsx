@@ -1,8 +1,12 @@
-
 import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-function Slider({ pictures, title }) {
+function Slider({ 
+  pictures, 
+  title, 
+  leftChevronClass = 'ChevronLeft', 
+  rightChevronClass = 'ChevronRight' 
+}) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handlePrevClick = () => {
@@ -20,25 +24,28 @@ function Slider({ pictures, title }) {
   return (
     <div className="ficheLogement">
       <h3>{title}</h3>
-      {pictures && pictures.length > 0 ? (
+      {pictures && pictures.length > 0 && (
         <div className="slider">
-          <span className="ChevronLeft">
-            <FaChevronLeft className="ChevronLeft" onClick={handlePrevClick} />
-          </span>
+          {pictures.length > 1 && (
+            <span className={leftChevronClass}>
+              <FaChevronLeft onClick={handlePrevClick} />
+            </span>
+          )}
           <img src={pictures[currentImageIndex]} alt={`${title}`} />
-          <span className="ChevronRight">
-            <FaChevronRight className="ChevronRight" onClick={handleNextClick} />
-          </span>
+          {pictures.length > 1 && (
+            <span className={rightChevronClass}>
+              <FaChevronRight onClick={handleNextClick} />
+            </span>
+          )}
+          {pictures.length > 1 && (
+            <div className="image-counter">
+              {currentImageIndex + 1} / {pictures.length}
+            </div>
+          )}
         </div>
-      ) : (
-        <p>Aucune image disponible</p>
       )}
     </div>
   );
 }
 
 export default Slider;
-
-
-
-

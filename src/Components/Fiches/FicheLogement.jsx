@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import Slides from '../Elements/slides';
 import Tagline from '../Elements/taglines';  
 import data from '../../assets/data/logements.json';
-import Rate from '../Elements/rating';
 import Host from '../Elements/host';
 import CollapseMenu from '../Elements/collapse';
 
@@ -32,7 +31,7 @@ export default function FicheLogement() {
       
       <div class="flatInformation">
         <div class="Flatlocation">
-        <h1 className='logement-description'>{logement.title}</h1>
+        <h2 className='logement-description'>{logement.title}</h2>
         <p className='logement-location'>Localisation: {logement.location}</p>
         </div>
         <Host 
@@ -43,7 +42,8 @@ export default function FicheLogement() {
 
       <div class="flatTagStars">
       <Tagline tags={logement.tags} />
-      <p>Rating:{logement.rating}</p>
+      
+      
       </div>
 
       <div class="allCollapse">

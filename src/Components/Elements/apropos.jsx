@@ -27,6 +27,7 @@ export default function Apropos() {
             openButtonText={collapse.title} 
             closeButtonText={collapse.title}
             buttonClassName="custom-button-class"
+            contentClassName="content-apropos"
           />
         ))}
       </div>

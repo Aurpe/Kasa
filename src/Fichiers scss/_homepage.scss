@@ -1,6 +1,6 @@
 
 .homepage {
-    background-color: #f6f6f6;
+   
     width: 1240px;
     height: auto;
     border-radius: 25px;
@@ -8,17 +8,21 @@
 
     .logements-grid {
     justify-items: center;
-    justify-content: space-around;
     grid-column-gap: 60px;
     grid-row-gap: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 56px 0;
+    background-color: #f6f6f6;
+    border-radius:25px;
+    margin-bottom:20px;
+    padding-right: 30px;
+    padding-left: 30px;
     }
     .logement-card {
       img {
         height: 340px;
-        width: 340px;
+        width: 100%;
         border-radius: 10px;
       }
     }

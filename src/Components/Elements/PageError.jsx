@@ -4,9 +4,10 @@ import React from 'react';
 
 export default function PageError() {
     return (
-        <div>
-            <h1>ERROR 404</h1>
-            <p>Page non trouvé</p>
+        <div className='Error'>
+            <p className='title'>404</p>
+            <p className='Subtitle'>Oups! la page que vous demandez n'existe pas </p>
+            <a href="/" className='BackHomePage'> Retourner sur la page d'accueil </a>
         </div>
     )
 };

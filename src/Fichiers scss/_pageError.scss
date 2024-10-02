@@ -1,0 +1,28 @@
+.Error{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .title{
+        font-size: 288px;
+        font-weight: bold;
+        margin-top: 139px;
+        margin-bottom:139px;
+        color: #FF6060;
+    }
+
+    .subtitle{
+        margin-bottom: 139px;
+        font-size: 36px;
+        color: #FF6060;
+        font-weight: 500;
+    }
+    .BackHomePage {
+        margin-bottom:139px;
+        font-size:18px;
+        color:black;
+    }
+}
+
