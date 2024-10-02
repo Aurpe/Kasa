@@ -5,6 +5,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    position: relative;
+    max-width: 100%;
 }
 
 .banner img{
@@ -12,16 +14,21 @@
     height:223px;
     object-fit: cover;
     border-radius:25px;
+    filter: brightness(45%);
+    display:block;
 
 }
 
 .bannerTitle{
     position: absolute;
-    top: 22%;
-    left: 32%;
+    top: 30%;
+    left: 50%;
     right: 32%;
-    color:white;
-    font-size:48px;
-    font-weight:700;
-    width:100%;
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
 }

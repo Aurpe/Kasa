@@ -7,18 +7,23 @@
     margin:auto;
 
     .logements-grid {
+   
+    padding: 56px 10px 56px 10px;
+    background-color: #f6f6f6;
     justify-items: center;
     grid-column-gap: 60px;
     grid-row-gap: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 56px 0;
     background-color: #f6f6f6;
-    border-radius:25px;
-    margin-bottom:20px;
-    padding-right: 30px;
-    padding-left: 30px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    min-width: 100%;
     }
+
+   
+
     .logement-card {
       img {
         height: 340px;
@@ -38,6 +43,7 @@
     }
   }
 
-  .logement-card  .a {
-    text-decoration: none;
+  .card{
+    height: 340px;
+    width: 100%;
   }
