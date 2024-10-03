@@ -10,7 +10,7 @@
 
     .logements-grid {
       
-      padding: 56px 10px ;
+      padding: 56px 20px ;
       background-color: #f6f6f6;
       justify-items: center;
       grid-column-gap: 60px;
@@ -19,18 +19,28 @@
       grid-template-columns: repeat(3, 1fr);
       border-radius: 25px;
       margin:auto;
-      max-width: 1240px;
+      width: 100%;
+    }
+
+    .Container-card {
       width: 100%;
     }
 
     .logement-card {
       img {
-        max-height: 340px;
-        width: 100%;
-        border-radius: 10px;
-        object-fit:cover
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      height: 100%;
       }
+
+      @media only screen and (min-width: 320px) and (max-width: 768px) { 
+        img{
+          height:255px;
+        }
+       
     }
+  }
     .logement-title {
     
     color: white;

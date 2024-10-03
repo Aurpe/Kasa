@@ -21,7 +21,7 @@ function LogementCard({ id, cover, title }) {
 export default function HomePage() {
   return (
     <div className="homepage">
-      <Banner img="./src/assets/Images/Banner_homepage.png" title= "Chez vous, et partout ailleurs" />
+      <Banner img="./src/assets/Images/Banner_homepage.png" title= "Chez vous, partout et ailleurs" />
       <main className="logements-grid">
        
         {Data.map((logement) => (

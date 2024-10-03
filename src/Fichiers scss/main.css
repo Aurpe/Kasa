@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #root {
   font-family: "Montserrat";
   box-sizing: border-box;
@@ -29,6 +30,11 @@ a {
   align-items: center;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .Bannerfooter {
+    width: 100%;
+  }
+}
 .Bannerfooter img {
   width: 80%;
   height: 223px;
@@ -39,8 +45,8 @@ a {
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .Bannerfooter img {
-    min-width: 335px;
-    min-height: 111px;
+    width: 335px;
+    height: 111px;
   }
 }
 .banner {
@@ -51,11 +57,15 @@ a {
   flex-wrap: wrap;
   align-items: center;
   position: relative;
-  max-width: 1240px;
+  width: 100%;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .banner {
+    gap: 22px;
+  }
 }
 .banner img {
   width: 100%;
-  max-width: 1440px;
   height: 223px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -66,10 +76,8 @@ a {
   margin: 0 auto;
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-  .banner {
-    width: 335px;
+  .banner img {
     height: 111px;
-    gap: 22px;
   }
 }
 
@@ -90,6 +98,8 @@ a {
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .bannerTitle {
     font-size: 24px;
+    top: -10%;
+    left: 5%;
   }
 }
 
@@ -134,7 +144,7 @@ a {
 
 }*/
 .btn-collapse {
-  width: 582px;
+  width: 100%;
   height: 52px;
   border-radius: 10px;
   color: white;
@@ -188,45 +198,43 @@ a {
   max-width: 1240px;
   width: 100%;
 }
-
-.flatInformation {
-  align-items: center;
+.Logement .flatInformation {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   margin: 25px auto;
 }
-
-.FlatLocation {
+.Logement .FlatLocation {
   display: flex;
   flex-direction: column;
 }
-
-.logement-description {
+.Logement .logement-description {
   font-weight: 500;
   font-size: 36px;
   color: #FF6060;
 }
-
-.logement-location {
+.Logement .logement-location {
   font-size: 26px;
   font-weight: 500;
   margin-top: -3%;
 }
-
-.flatTagStars {
+.Logement .flatTagStars {
   display: flex;
   justify-content: space-between;
 }
-
-.logement.card {
+.Logement.card {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-.container.card {
-  padding: 0px 20px 0px 20px;
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .Logement .logement-description {
+    font-size: 18px;
+  }
+  .Logement .logement-location {
+    font-size: 14px;
+  }
 }
 
 .Navbar {
@@ -275,7 +283,7 @@ header {
   box-sizing: border-box;
 }
 .homepage .logements-grid {
-  padding: 56px 10px;
+  padding: 56px 20px;
   background-color: #f6f6f6;
   justify-items: center;
   grid-column-gap: 60px;
@@ -284,15 +292,22 @@ header {
   grid-template-columns: repeat(3, 1fr);
   border-radius: 25px;
   margin: auto;
-  max-width: 1240px;
+  width: 100%;
+}
+.homepage .Container-card {
   width: 100%;
 }
 .homepage .logement-card img {
-  max-height: 340px;
   width: 100%;
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 100%;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .homepage .logement-card img {
+    height: 255px;
+  }
 }
 .homepage .logement-title {
   color: white;
@@ -322,7 +337,7 @@ header {
   margin-bottom: 139px;
   color: #FF6060;
 }
-.Error .subtitle {
+.Error .Subtitle {
   margin-bottom: 139px;
   font-size: 36px;
   color: #FF6060;
@@ -333,6 +348,20 @@ header {
   font-size: 18px;
   color: black;
 }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .Error .title {
+    font-size: 96px;
+  }
+  .Error .Subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+  .Error .BackHomePage {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}
 
 .slider {
   display: flex;
@@ -341,30 +370,15 @@ header {
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .slider img {
   border-radius: 25px;
   width: 100%;
   max-width: 1240px;
-  height: auto;
   max-height: 415px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-/*.ChevronLeft,
-.ChevronRight {
-    width: 46px;
-    height: 79px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
-    color:white;
-    position: absolute;
-    right: 20%;
-}*/
 .ChevronRight, .ChevronLeft {
   height: 79px;
   display: flex;
@@ -392,6 +406,21 @@ header {
   font-size: 18px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .ChevronLeft, .ChevronRight {
+    width: 24px;
+    height: 24px;
+  }
+  .ChevronLeft {
+    left: 10%;
+  }
+  .ChevronRight {
+    right: 10%;
+  }
+  .image-counter {
+    top: 60%;
+  }
+}
 .tags-container {
   margin-bottom: 20px;
 }
@@ -431,14 +460,13 @@ header {
   align-items: center;
   display: flex;
   flex-direction: row;
+  /* Media Queries pour les écrans entre 320px et 768px */
 }
-
-.host-name {
+.host .host-name {
   font-size: 18px;
   color: #FF6060;
   margin-right: 10px;
 }
-
 .host img {
   border-radius: 45px;
   width: 64px;
@@ -446,9 +474,16 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .host-2 {
   display: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .host {
+    display: none;
+  }
+  .host-2 {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -481,24 +516,13 @@ header {
     width: 145px;
     margin-right: 25px;
   }
-  .slider {
-    height: 255px;
-  }
-  .host {
-    display: none;
-  }
-  .host-2 {
-    display: block;
-  }
   .allCollapse {
     display: flex;
     flex-direction: column;
+    gap: 20px;
   }
-  .Logement {
-    max-width: 335px;
-  }
-  .btn-collapse, .collapse-content {
-    min-width: 335px;
+  .collapse-apropos {
+    width: 100%;
   }
   .logement-title {
     margin-top: -75px;

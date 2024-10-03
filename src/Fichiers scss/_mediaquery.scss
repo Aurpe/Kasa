@@ -34,31 +34,16 @@
       width: 145px;
       margin-right:25px;
     }
-  
-    .slider {
-      height: 255px;
-    }
 
-    .host{
-        display:none;
-
-    }
-
-    .host-2{
-        display:block;
-    }
 
     .allCollapse{
       display: flex;
       flex-direction:column;
+      gap:20px;
     }
-    .Logement{
-      max-width:335px;
-
-    }
-
-    .btn-collapse, .collapse-content{
-      min-width:335px;
+  
+    .collapse-apropos{
+      width:100%;
     }
 
     .logement-title{

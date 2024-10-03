@@ -1,25 +1,36 @@
-.host{
+.host {
     align-content: flex-end;
     flex-wrap: wrap;
     align-items: center;
     display: flex;
     flex-direction: row;
-}
-
-.host-name{
-    font-size:18px;
-    color:#FF6060;
-    margin-right:10px;
-}
-
-.host img{
-    border-radius: 45px;
-    width:64px;
-    height: 64px;
-    object-fit: cover;
-
-}
-
-.host-2{
-    display:none;
-}
+  
+    .host-name {
+      font-size: 18px;
+      color: #FF6060;
+      margin-right: 10px;
+    }
+  
+    img {
+      border-radius: 45px;
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+    }
+  
+    &-2 {
+      display: none;
+    }
+  
+    /* Media Queries pour les écrans entre 320px et 768px */
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+      & {
+        display: none;
+      }
+  
+      &-2 {
+        display: block;
+      }
+    }
+  }
+  

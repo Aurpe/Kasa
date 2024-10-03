@@ -1,63 +1,64 @@
 .slider {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-    
-.slider img{
-    border-radius:25px;
-    width:100%;
-   max-width: 1240px;
-height: auto;
-  max-height: 415px;
-  object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  img {
+    border-radius: 25px;
+    width: 100%;
+    max-width: 1240px;
+    max-height: 415px;
+    object-fit: cover;
+  }
 }
 
-/*.ChevronLeft,
+.ChevronRight, .ChevronLeft {
+  height: 79px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  color: white;
+  position: absolute;
+  font-size: 46px;
+}
+
 .ChevronRight {
-    width: 46px;
-    height: 79px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
-    color:white;
-    position: absolute;
-    right: 20%;
-}*/
-
-.ChevronRight,.ChevronLeft{
-    height: 79px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
-    color:white;
-    position: absolute;
-    font-size: 46px;
-
+  right: 30%;
 }
 
-.ChevronRight{
-    right: 30%; 
+.ChevronLeft {
+  left: 30%;
 }
 
-
-.ChevronLeft{
-    left: 30%;
-   
+.image-counter {
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  font-size: 18px;
 }
 
-.image-counter{
-    position: absolute;
-    bottom: 10%;
-    color: white;
-    font-size: 18px;
-}
-    
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .ChevronLeft, .ChevronRight {
+    width: 24px;
+    height: 24px;
+  }
 
+  .ChevronLeft {
+    left: 10%;
+  }
+
+  .ChevronRight {
+    right: 10%;
+  }
+
+  .image-counter {
+    top: 60%;
+  }
+}
+
+  
 

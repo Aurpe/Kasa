@@ -1,28 +1,49 @@
-.Error{
+.Error {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
-    .title{
+    .title {
         font-size: 288px;
         font-weight: bold;
         margin-top: 139px;
-        margin-bottom:139px;
+        margin-bottom: 139px;
         color: #FF6060;
     }
 
-    .subtitle{
+    .Subtitle {
         margin-bottom: 139px;
         font-size: 36px;
         color: #FF6060;
         font-weight: 500;
     }
+
     .BackHomePage {
-        margin-bottom:139px;
-        font-size:18px;
-        color:black;
+        margin-bottom: 139px;
+        font-size: 18px;
+        color: black;
+    }
+
+    
+    @media only screen and (min-width: 320px) and (max-width: 768px) { 
+        .title {
+            font-size: 96px;
+        }
+
+        .Subtitle {
+            font-size: 18px;
+            text-align:center;
+            
+        }
+
+        .BackHomePage {
+            font-size: 14px;
+            font-weight:500;
+            text-decoration:underline;
+        }
     }
 }
+
 

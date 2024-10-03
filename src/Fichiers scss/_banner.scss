@@ -7,11 +7,15 @@
     flex-wrap: wrap;
     align-items: center;
     position: relative;
-    max-width: 1240px;
+    width:100%;
+
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+       
+        gap: 22px;
+    }
 
     img {
         width: 100%;
-        max-width: 1440px;
         height: 223px;
         object-fit: cover;
         border-radius: 25px;
@@ -22,9 +26,10 @@
     }
 
     @media only screen and (min-width: 320px) and (max-width: 768px) {
-        width: 335px;
-        height: 111px;
-        gap: 22px;
+       
+        img{
+            height:111px;
+        }
     }
 }
 
@@ -44,6 +49,8 @@
 
     @media only screen and (min-width: 320px) and (max-width: 768px) {
         font-size: 24px;
+        top: -10%;
+        left: 5%;
     }
 }
 

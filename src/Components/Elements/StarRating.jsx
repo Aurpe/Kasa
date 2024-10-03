@@ -1,9 +1,8 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 
-// Composant pour afficher les étoiles
 const StarRating = ({ rating }) => {
-  const numericRating = parseInt(rating, 10) || 0; // Utilise 0 si la conversion échoue
+  const numericRating = parseInt(rating, 10) || 0;
   
   return (
     <div className="star-rating">
@@ -20,12 +19,12 @@ const StarRating = ({ rating }) => {
   );
 };
 
-export default function App({ logements = [] }) { 
+export default function App({ logements = [] }) {
   return (
-    <div className="App">
+    <div className="stars">
       {logements.map((logement) => (
         <div key={logement.id} className="logement-item">
-          <h2>{logement.name}</h2>
+          <h2>{logement.title}</h2>
           <StarRating rating={logement.rating} />
         </div>
       ))}

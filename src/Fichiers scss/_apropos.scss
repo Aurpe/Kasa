@@ -12,7 +12,11 @@
     flex-wrap: wrap;
     align-items: center;
 }
-
+@media only screen and (min-width: 320px) and (max-width: 768px) { 
+    .Bannerfooter{
+        width:100%
+    }
+}
 .Bannerfooter img{
     width:80%;
     height:223px;
@@ -23,7 +27,7 @@
 
 @media only screen and (min-width: 320px) and (max-width: 768px) { 
     .Bannerfooter img {
-    min-width: 335px;
-    min-height: 111px;
+    width: 335px;
+    height: 111px;
     }
 }
