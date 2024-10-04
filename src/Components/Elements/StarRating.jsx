@@ -1,16 +1,18 @@
 import React from 'react';
-import { FaStar } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
-const StarRating = ({ rating }) => {
-  const numericRating = parseInt(rating, 10) || 0;
-  
+const StarRating = ({ rating, className }) => {
+  const numericRating = Math.round(parseFloat(rating)) || 0;
+
   return (
-    <div className="star-rating">
+    <div className={`star-rating ${className}`}>
       {[...Array(5)].map((_, index) => {
         const ratingValue = index + 1;
         return (
-          <FaStar
+          <FontAwesomeIcon
             key={index}
+            icon={faStar}
             className={`star ${ratingValue <= numericRating ? 'filled' : ''}`}
           />
         );
@@ -19,18 +21,9 @@ const StarRating = ({ rating }) => {
   );
 };
 
-export default function App({ logements = [] }) {
-  return (
-    <div className="stars">
-      {logements.map((logement) => (
-        <div key={logement.id} className="logement-item">
-          <h2>{logement.title}</h2>
-          <StarRating rating={logement.rating} />
-        </div>
-      ))}
-    </div>
-  );
-}
+export default StarRating;
+
+
 
 
 

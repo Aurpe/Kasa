@@ -14,6 +14,7 @@ export default function Apropos() {
   return (
     <div className="apropos">
       
+      
       <Banner img="./src/assets/Images/Banner_avantpropos.png" title=" " className="Bannerfooter" />
 
       

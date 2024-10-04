@@ -5,10 +5,14 @@
     display: flex;
     flex-direction: row;
   
-    .host-name {
+    .name-host {
       font-size: 18px;
       color: #FF6060;
       margin-right: 10px;
+    }
+
+    .Host-rating{
+      display:none;
     }
   
     img {
@@ -29,8 +33,14 @@
       }
   
       &-2 {
-        display: block;
+        align-content: flex-end;
+        flex-wrap: wrap;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
       }
+
+      
     }
   }
   

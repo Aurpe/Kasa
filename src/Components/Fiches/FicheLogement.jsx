@@ -41,7 +41,12 @@ export default function FicheLogement() {
       
       <div className="flatTagStars">
         <Tagline tags={logement.tags} />
-        <StarRating rating={logement.rating} />
+        <StarRating rating={logement.rating} className="custom-rating"/>
+        </div>
+
+
+        <div className= 'Host-rating'>
+        <StarRating rating={logement.rating} className="custom-rating-class" />
         <Host
           name={logement.host.name}
           picture={logement.host.picture}

@@ -1,13 +1,10 @@
 
 .banner {
     margin-bottom: 50px;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    width: 100%;
     position: relative;
-    width:100%;
+    overflow: hidden;
+    
 
     @media only screen and (min-width: 320px) and (max-width: 768px) {
        
@@ -15,14 +12,13 @@
     }
 
     img {
-        width: 100%;
-        height: 223px;
-        object-fit: cover;
-        border-radius: 25px;
-        filter: brightness(45%);
-        display: block;
-        position: relative;
-        margin: 0 auto;
+    width: 100%;
+    height: 223px;
+    object-fit: cover;
+    border-radius: 25px;
+    filter: brightness(45%);
+    display: block;
+    margin: 0 auto;
     }
 
     @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -34,22 +30,20 @@
 }
 
 .bannerTitle {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    left: 0;
     position: absolute;
+    left: 0;
     right: 0;
-    top: 0;
-    width: 100%;
-    z-index: 4;
+    top: 40%; 
+    transform: translateY(-50%); 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
     font-size: 48px;
     color: white;
+    z-index: 4;
 
     @media only screen and (min-width: 320px) and (max-width: 768px) {
         font-size: 24px;
-        top: -10%;
         left: 5%;
     }
 }

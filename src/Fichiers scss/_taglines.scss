@@ -9,15 +9,19 @@
     padding: 5px;
     background-color: #FF6060;
     color:white;
-    font-weight:500;
+    font-weight: bold;
+    margin-left: 10px;
     ;
 }
 
 .flatTagStars{
-    align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-top: -25px;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:-25px;
+    margin-bottom:10px;
     
 }
 

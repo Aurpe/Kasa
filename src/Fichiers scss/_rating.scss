@@ -1,0 +1,38 @@
+.star-rating {
+    display: flex; 
+  }
+  
+  .star {
+    color: lightgray; 
+    font-size: 24px; 
+  }
+  
+  .star.filled {
+    color:#FF6060; 
+  }
+
+  .custom-rating-class{
+    display:none
+  }
+
+  /* Media Queries pour les écrans entre 320px et 768px */
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .custom-rating-class{
+        display:block
+      }
+
+      .custom-rating{
+        display:none;
+      }
+
+      .Host-rating{
+        display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       margin-bottom:20px;
+      }
+    }
+
+
+    
