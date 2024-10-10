@@ -1,10 +1,10 @@
 
 import React, { useState, useEffect } from 'react';
-import CollapseMenu from './collapse';
-import Banner from './banner';
+import CollapseMenu from './Collapse';
+import Banner from './Banner';
 import data from '../../assets/data/apropos.json'; 
 
-export default function Apropos() {
+export default function About () {
   const [collapses, setCollapses] = useState([]);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ export default function Apropos() {
       <Banner img="./src/assets/Images/Banner_avantpropos.png" title=" " className="Bannerfooter" />
 
       
-      <div class="collapse-apropos">
+      <div class="Collapse-apropos">
       
         {collapses.map((collapse, index) => (
           <CollapseMenu

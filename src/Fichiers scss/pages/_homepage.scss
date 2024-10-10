@@ -4,10 +4,8 @@
   width: 100%;
   max-width: 1240px; 
   margin: 0 auto; 
-  padding: 0 20px; 
-  box-sizing: border-box;
 
-
+  
     .logements-grid {
 
       padding: 56px 20px; 
@@ -19,28 +17,36 @@
       border-radius: 25px;
       margin: auto;
       width: 100%;
-      width: calc(100% - 40px);
+      
     }
 
-    .Container-card {
+    @media only screen and (min-width: 320px) and (max-width: 768px) { 
+      .homepage .logements-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .container-card {
       width: 100%;
+      height:340px;
       display: flex;
       flex-direction: column; 
       background-color: white;
       border-radius: 10px; 
       overflow: hidden; 
       position:relative;
+      
     }
 
-   
 
     .logement-card {
       
       img {
-        width: 100%; 
-        height: 340px; 
+         
         object-fit: cover; 
         border-radius: 10px;
+        height:340px;
       }
 
       @media only screen and (min-width: 320px) and (max-width: 768px) { 
@@ -50,6 +56,18 @@
        
     }
   }
+
+
+  @media only screen and (max-width: 768px) { /* Pour les petits écrans */
+    .container-card {
+      height: 255px; /* Ajustement de la hauteur de la card */
+    }
+
+    .logement-card img {
+      height: 255px; /* Ajustement de l'image à la hauteur de la card */
+    }
+  }
+
     .logement-title {
     
     
@@ -63,8 +81,18 @@
       text-decoration: none;
     }
 
-    .card{
-      height: 340px;
-      width: 100%;
+    
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .homepage {
+      padding: 10px; 
+    }
+
+    .Logement{
+      padding-right:30px;
+      padding-left:30px;
     }
   }
+  
+  

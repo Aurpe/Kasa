@@ -1,4 +1,14 @@
 # React + Vite
+ 
+ Afin d'initialiser le projet NPM Install
+ Javascript- React une seule fois 
+ ensuite à chaque fois pour démarrer le projet NPM run dev
+
+
+ Installer ESLINT
+ npm install eslint --save-dev
+ npx eslint --init
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

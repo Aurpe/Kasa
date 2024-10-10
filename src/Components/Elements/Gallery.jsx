@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-function Slider({ 
+function Gallery({ 
   pictures, 
   title, 
   leftChevronClass = 'ChevronLeft', 
@@ -48,4 +48,4 @@ function Slider({
   );
 }
 
-export default Slider;
+export default Gallery;

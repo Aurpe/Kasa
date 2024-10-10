@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./Components/Elements/homepage";
-import FicheLogement from './Components/Fiches/FicheLogement';
-import Apropos from './Components/Elements/apropos';
-import Footer from './Components/Footer/footer';
-import Header from './Components/header/Header';
+import HomePage from "./Components/Elements/Homepage";
+import FicheLogement from './Components/Elements/AccomodationSheet';
+import Apropos from './Components/Elements/About';
+import Footer from './Components/Elements/Footer';
+import Header from './Components/Elements/Header';
 import PageError from './Components/Elements/PageError';
 
 

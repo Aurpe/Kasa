@@ -3,24 +3,8 @@
       display: grid;
       grid-template-columns: 1fr;
     }
-  
-    header {
-      flex-direction: row;
-      align-items: center;
-      width: 335px;
-      width: auto;
-    }
 
-   
-    .Navbar {
-      margin: 10px 0;
-      text-transform: uppercase;
-      font-size:12px;
-      gap:26px;
-      flex-direction: row;
-      align-items: center;
-    }
-  
+    
     .logement-card img {
       height: 255px;
     }

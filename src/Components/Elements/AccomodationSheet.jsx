@@ -1,32 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import Slides from '../Elements/slides';
-import Tagline from '../Elements/taglines';
+import { useParams, useNavigate } from 'react-router-dom'; 
+import Gallery from './Gallery';
+import Tagline from './Taglines';
 import data from '../../assets/data/logements.json';
-import Host from '../Elements/host';
-import CollapseMenu from '../Elements/collapse';
-import StarRating from '../Elements/StarRating';
+import Host from './Host';
+import CollapseMenu from './Collapse';
+import StarRating from './StarRating';
 
-export default function FicheLogement() {
+
+export default function AccomodationSheet() {
   const { id } = useParams();
   const [logement, setLogement] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const findLogement = () => {
       const found = data.find(logement => logement.id === id);
-      setLogement(found || null);
+      if (!found) {
+        navigate('/PageError');
+      } else {
+        setLogement(found);
+      }
     };
 
     findLogement();
-  }, [id]);
-
-  if (!logement) {
-    return <div>Logement non trouvé</div>;
-  }
+  }, [id, navigate]); 
 
   return (
     <div className="Logement">
-      <Slides pictures={logement.pictures} />
+      <Gallery pictures={logement.pictures} />
       
       <div className="flatInformation">
         <div className="Flatlocation">

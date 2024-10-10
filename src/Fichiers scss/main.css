@@ -1,4 +1,8 @@
 @charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
 #root {
   font-family: "Montserrat";
   box-sizing: border-box;
@@ -23,7 +27,7 @@ a {
 
 .Bannerfooter {
   margin-bottom: 30px;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -48,16 +52,16 @@ a {
     width: 335px;
     height: 111px;
   }
+  .Collapse-apropos {
+    width: 100%;
+    max-width: 1240px;
+  }
 }
 .banner {
   margin-bottom: 50px;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  position: relative;
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .banner {
@@ -72,7 +76,6 @@ a {
   border-radius: 25px;
   filter: brightness(45%);
   display: block;
-  position: relative;
   margin: 0 auto;
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -82,23 +85,21 @@ a {
 }
 
 .bannerTitle {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  left: 0;
   position: absolute;
+  left: 0;
   right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 4;
+  top: 40%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 48px;
   color: white;
+  z-index: 4;
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .bannerTitle {
     font-size: 24px;
-    top: -10%;
     left: 5%;
   }
 }
@@ -154,6 +155,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .custom-button-class {
@@ -189,10 +192,31 @@ a {
   margin-bottom: 25px;
 }
 
-.collapse-apropos {
-  width: 55%;
+.collapse-menu {
+  width: 100%;
 }
 
+/* Media Queries pour les écrans entre 320px et 768px */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .collapse-menu {
+    width: 100%;
+  }
+  .allCollapse {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .custom-button-class {
+    font-size: 13px;
+  }
+  .collapse-content {
+    font-size: 11px;
+  }
+  .Collapse-apropos {
+    width: 100%;
+    max-width: 1240px;
+  }
+}
 .Logement {
   margin: auto;
   max-width: 1240px;
@@ -285,24 +309,30 @@ header {
 .homepage .logements-grid {
   padding: 56px 20px;
   background-color: #f6f6f6;
-  justify-items: center;
-  grid-column-gap: 60px;
-  grid-row-gap: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  grid-row-gap: 50px;
   border-radius: 25px;
   margin: auto;
   width: 100%;
+  width: calc(100% - 40px);
 }
 .homepage .Container-card {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 }
 .homepage .logement-card img {
   width: 100%;
-  border-radius: 10px;
+  height: 340px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
+  border-radius: 10px;
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .homepage .logement-card img {
@@ -310,12 +340,13 @@ header {
   }
 }
 .homepage .logement-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
   color: white;
   font-size: 18px;
   font-weight: 500;
   width: 70%;
-  margin-top: -55px;
-  margin-left: 10px;
   text-decoration: none;
 }
 .homepage .card {
@@ -431,14 +462,18 @@ header {
   padding: 5px;
   background-color: #FF6060;
   color: white;
-  font-weight: 500;
+  font-weight: bold;
+  margin-left: 10px;
 }
 
 .flatTagStars {
-  align-items: center;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: -25px;
+  margin-bottom: 10px;
 }
 
 .footer {
@@ -462,10 +497,13 @@ header {
   flex-direction: row;
   /* Media Queries pour les écrans entre 320px et 768px */
 }
-.host .host-name {
+.host .name-host {
   font-size: 18px;
   color: #FF6060;
   margin-right: 10px;
+}
+.host .Host-rating {
+  display: none;
 }
 .host img {
   border-radius: 45px;
@@ -482,7 +520,11 @@ header {
     display: none;
   }
   .host-2 {
-    display: block;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -516,15 +558,43 @@ header {
     width: 145px;
     margin-right: 25px;
   }
-  .allCollapse {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
   .collapse-apropos {
     width: 100%;
   }
   .logement-title {
     margin-top: -75px;
+  }
+}
+.star-rating {
+  display: flex;
+}
+
+.star {
+  color: lightgray;
+  font-size: 24px;
+}
+
+.star.filled {
+  color: #FF6060;
+}
+
+.custom-rating-class {
+  display: none;
+}
+
+/* Media Queries pour les écrans entre 320px et 768px */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .custom-rating-class {
+    display: block;
+  }
+  .custom-rating {
+    display: none;
+  }
+  .Host-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=main.css.map */
