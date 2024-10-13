@@ -3,7 +3,8 @@
     flex-wrap: wrap;
     align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    gap:10px;
   
     .name-host {
       font-size: 18px;
@@ -33,11 +34,19 @@
       }
   
       &-2 {
+
         align-content: flex-end;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
+        
+      }
+
+      .name-host{
+        font-size:12px;
+        font-weight:500;
       }
 
       

@@ -47,6 +47,8 @@
         object-fit: cover; 
         border-radius: 10px;
         height:340px;
+        width:100%;
+
       }
 
       @media only screen and (min-width: 320px) and (max-width: 768px) { 
@@ -63,11 +65,7 @@
       height: 255px; /* Ajustement de la hauteur de la card */
     }
 
-    .logement-card img {
-      height: 255px; /* Ajustement de l'image à la hauteur de la card */
-    }
   }
-
     .logement-title {
     
     

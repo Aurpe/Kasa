@@ -4,9 +4,9 @@
 
 
 .tag{
-    border-radius: 20px;
+    border-radius: 10px;
     border: solid 1px;
-    padding: 5px;
+    padding: 8px;
     background-color: #FF6060;
     color:white;
     font-weight: bold;
@@ -20,10 +20,18 @@
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top:-25px;
+    margin-top:-20px;
     margin-bottom:10px;
     
 }
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .tag{
+        border-radius:5px;
+        margin-left:0px;
+        padding:5px;
+
+    }
+}
 
 

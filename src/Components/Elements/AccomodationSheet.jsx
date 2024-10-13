@@ -26,6 +26,10 @@ export default function AccomodationSheet() {
     findLogement();
   }, [id, navigate]); 
 
+  if (!logement){
+    return <div>Loading</div>
+  }
+
   return (
     <div className="Logement">
       <Gallery pictures={logement.pictures} />

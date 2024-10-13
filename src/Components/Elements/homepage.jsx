@@ -1,8 +1,7 @@
 import React from 'react';
 import Data from '../../assets/data/logements.json';
-import Banner from './Banner'; 
+import Banner from './Banner';
 import AccomodationCard from './Accomodation-card';
-
 
 export default function HomePage() {
   return (
@@ -21,6 +20,7 @@ export default function HomePage() {
     </div>
   );
 }
+
 
 
 
