@@ -57,7 +57,13 @@ padding:10px;
 .Collapse-apropos{
     width: 70%;
    
+}
+
+.collapse-content 
+    li {
+        list-style-type: none; 
     }
+
 
 /* Media Queries pour les écrans entre 320px et 768px */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -75,6 +81,10 @@ padding:10px;
     }
     .collapse-content{
         font-size: 11px;
+    }
+
+    .btn-collapse{
+        font-size:13px;
     }
 
   

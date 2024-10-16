@@ -26,12 +26,16 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) { 
-    .Bannerfooter img {
-    width: 335px;
-    height: 111px;
+    .apropos{
+    width: 80%;
+    margin: auto;
     }
     .Collapse-apropos{
     width: 100%;
     max-width: 1240px;
+    }
+    .Bannerfooter img{
+        height:111px;
+        width:100%;
     }
 }

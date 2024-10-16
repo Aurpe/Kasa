@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaChevronUp, FaChevronDown } from 'react-icons/fa';
 
+
 export default function CollapseMenu({
   title,
   content,
@@ -21,9 +22,11 @@ export default function CollapseMenu({
       </button>
       {isOpen && (
         <div className={`collapse-content ${contentClassName}`}>
-          <p>{content}</p>
-        </div>
-      )}
+        {content}
+        
+      </div>
+    )}
     </div>
   );
 }
+    

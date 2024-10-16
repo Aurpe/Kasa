@@ -18,7 +18,7 @@ export default function AccomodationSheet() {
       const found = data.find(logement => logement.id === id);
       if (!found) {
         navigate('/PageError');
-      } else {
+      } else { // pas besoin 
         setLogement(found);
       }
     };

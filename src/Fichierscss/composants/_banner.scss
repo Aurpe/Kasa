@@ -25,6 +25,7 @@
        
         img{
             height:111px;
+            
         }
     }
 }
@@ -41,12 +42,28 @@
     font-size: 48px;
     color: white;
     z-index: 4;
+}
 
     @media only screen and (min-width: 320px) and (max-width: 768px) {
+
+        .bannerTitle{
         font-size: 24px;
+        }
+
+        .Bannerfirst{
+        position: absolute;
+        bottom: 50%;
         left: 5%;
+        }
+
+        .Bannersecond{
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        }
+        
     }
-}
+
 
 
 

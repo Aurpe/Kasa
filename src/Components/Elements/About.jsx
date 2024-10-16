@@ -18,7 +18,7 @@ export default function About () {
       <Banner img="./src/assets/Images/Banner_avantpropos.png" title=" " className="Bannerfooter" />
 
       
-      <div class="Collapse-apropos">
+      <div className="Collapse-apropos">
       
         {collapses.map((collapse, index) => (
           <CollapseMenu

@@ -6,7 +6,16 @@ import AccomodationCard from './Accomodation-card';
 export default function HomePage() {
   return (
     <div className="homepage">
-      <Banner img="./src/assets/Images/Banner_homepage.png" title="Chez vous, partout et ailleurs" />
+      <Banner img="./src/assets/Images/Banner_homepage.png"
+       title={(
+        <>
+          <span className='Bannerfirst'>Chez vous, </span>
+          <br/>
+          <span className='Bannersecond'>partout et ailleurs</span>
+        </>
+      )}
+    />
+
       <main className="logements-grid">
         {Data.map((logement) => (
           <AccomodationCard

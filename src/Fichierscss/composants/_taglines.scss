@@ -1,5 +1,8 @@
 .tags-container{
-    margin-bottom:20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap:5px;
 }
 
 
@@ -10,8 +13,11 @@
     background-color: #FF6060;
     color:white;
     font-weight: bold;
-    margin-left: 10px;
-    ;
+    font-size:14px;
+    height: 25px;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .flatTagStars{
@@ -23,6 +29,7 @@
     margin-top:-20px;
     margin-bottom:10px;
     
+    
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -30,7 +37,13 @@
         border-radius:5px;
         margin-left:0px;
         padding:5px;
+        display:flex;
+        font-size:10px;
 
+    }
+
+    .flatTagStars{
+        margin-bottom:0px;
     }
 }
 
